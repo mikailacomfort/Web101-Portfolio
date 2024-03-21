@@ -1,0 +1,215 @@
+
+html {
+  font-family: "jost", "sans-serif";
+  letter-spacing: 3px;
+  background-color: black;
+}
+
+header {
+  height: 100vh;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  width: 100%;
+  grid-gap: 10%;
+  margin: 0;
+}
+
+#container2 {
+  height: 1000px;
+  grid-row-start: 0;
+  grid-row-end: 1;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin: 0;
+}
+
+#contact-video {
+  max-height: 1000px;
+  width: auto;
+  margin: 0;
+} 
+
+button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, input, select, textarea {
+  color: white;
+  font: inherit;
+  margin: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+#container {
+  max-width: 768px; 
+  grid-row-start: 0;
+  grid-row-end: 1;
+  grid-column-start: 0;
+  grid-column-end: 2;
+  background-color: black;
+  margin: 10%;
+  width: 100%; 
+}
+
+form {
+  padding: 37.5px;
+  margin: 50px 0;
+}
+
+h1 {
+  color: #FFFFFF;
+  font-family: "Jost", sans-serif;
+  font-size: 88px !important;
+  text-align: left;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-left: 20px;
+}
+
+#subject-input {
+  background-color: white;
+}
+
+.email {
+	float: right;
+	width: 45%;
+}
+
+input[type='text'], [type='email'], select, textarea {
+	background: none;
+  border: none;
+	border-bottom: solid 2px white;
+	color: white;
+	font-size: 1.000em;
+  font-weight: 400;
+  letter-spacing: 1px;
+	margin: 0em 0 1.875em 0;
+	padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+	width: 100%;
+}
+
+.message {
+	float: none;
+}
+
+.name {
+	float: left;
+	width: 45%;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.subject {
+  width: 100%;
+}
+
+.telephone {
+  width: 100%;
+}
+
+textarea {
+	line-height: 150%;
+	height: 150px;
+	resize: none;
+  width: 100%;
+}
+
+::placeholder {
+  color: white !important;
+}
+
+
+#form_button {
+  background: none;
+  border: solid 2px white;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+
+}
+
+#form_button:hover {
+  background: white;
+  color: black;
+}
+
+@media (max-width: 1086px) {
+  #container2 {
+    display: none;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 2fr 0px;
+    grid-template-rows: 1fr;
+  }
+
+  #container{
+    width: 100%;
+  
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #container {
+    margin: 20px auto;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 26px;
+  }
+  
+  .underline {
+    width: 68px;
+  }
+  
+  #form_button {
+    padding: 15px 25px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 18px;
+  }
+  
+  .icon {
+    height: 35px;
+    width: 35px;
+  }
+  
+  .underline {
+    width: 53px;
+  }
+  
+  input[type='text'], [type='email'], select, textarea {
+    font-size: 0.875em;
+  }
+}

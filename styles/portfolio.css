@@ -1,0 +1,160 @@
+
+.portfolio-container {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-direction: right;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 1fr 1fr 2fr 1fr;
+  column-gap: 20px;
+  row-gap: 1em;
+  height: 100%;
+  width: 100%;
+}
+
+.portfolio-container a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  text-align: left;
+  font-size: 1rem;
+  margin-left: 15px;
+}
+
+
+#portfolio-content {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 15%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.pic {
+  height: 50%;
+  width: 100%;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+
+#calc {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#site2 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#ttt {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#site {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#list {
+  grid-column-start: 7;
+  grid-column-end: 8;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.nav {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+@media (max-width: 1260px){
+
+.pic {
+  height: 35%;
+}
+}
+
+@media (max-width: 809px) {
+
+  #portfolio-content {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .portfolio-container {
+    row-gap: 50px;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(8, 1fr);
+  }
+
+  #calc {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  
+  #site2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+  
+  #ttt {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+  
+  #site {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+  }
+  
+  #list {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 8;
+  
+  }
+
+  .pic {
+    height: 100%;
+  }
+
+ #list a {
+  padding-bottom: 50px;
+ }
+
+ #list .pic{
+  height: 80%;
+ }
+}

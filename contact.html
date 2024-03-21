@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles/contact.css" />
+  <link rel="stylesheet" type="text/css" href="styles/navigation.css" />
+  <script src="script.js" defer></script> 
+  <title>Contact</title>
+</head>
+<body>
+  <div class="nav">
+    <label for="toggle">&#9776;</label>
+    <input type="checkbox" id="toggle"/>
+    <div class="menu">
+      <a class="mik" href="index.html">Mikaila Comfort</a>
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html"><span>Contact</span></a>
+      <script src="scripts.js" defer></script> 
+    </div>
+    <!-- close menu -->
+  </div>
+  <!-- close nav -->
+  <section class="grid">
+<div id="container">
+  <h1>Let's Keep In Touch</h1>
+  <form action="results.html" method="GET" enctype="multipart/form-data" id="contact_form">
+    <div class="name">
+      <label for="name"></label>
+      <input type="text" placeholder="My name is" name="name" id="name_input" required>
+    </div>
+    <!-- close name -->
+    <div class="email">
+      <label for="email"></label>
+      <input type="email" placeholder="My e-mail is" name="email" id="email_input" required>
+    </div>
+    <!-- close email -->
+    <div class="telephone">
+      <label for="name"></label>
+      <input type="text" placeholder="My number is" name="telephone" id="telephone_input" required>
+    </div>
+    <!-- close telephone -->
+    <div class="subject">
+      <label for="subject"></label>
+      <select placeholder="Subject line" name="subject" id="subject_input" required>
+        <option disabled hidden selected>Subject line</option>
+        <option>I'd like to ask a question</option>
+        <option>I'd like to collaborate</option>
+        <option>I'd like to hire your services</option>
+      </select>
+    </div>
+    <!-- close subject -->
+    <div class="message">
+      <label for="message"></label>
+      <textarea name="message" placeholder="I'd like to chat about" id="message_input" cols="30" rows="5" required></textarea>
+    </div>
+    <!-- close message -->
+    <div class="submit">
+      <input type="submit" value="Send Message" id="form_button" />
+    </div>
+    <!-- close submit -->
+  </form>
+  <!-- close form -->
+  
+</div>
+<!-- close container -->
+<div id="container2">
+  <video autoplay muted loop id="contact-video">
+    <source src="contact-video.mp4" type="video/mp4">
+  </video>
+</div>
+<!-- close container2 -->
+</section>
+<!-- close grid -->
+</body>
+</html>
